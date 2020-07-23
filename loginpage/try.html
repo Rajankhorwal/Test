@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+
+<h1>hello guys on my home page</h1>
+<span id="hello-msg">hello,{{ request.user }}</span>
+<span><a href="{% url 'logout' %}">logout</a></span>
+
+</body>
+</html>
