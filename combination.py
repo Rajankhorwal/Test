@@ -18,9 +18,13 @@ if len(list1)>3:
         def fact(r):
          for i in range(0, len(dict1)):
               dict1.append(dict1[i].union(dict1[r]))
+        if len(list1)>5:
+           for i in range(0, len(dict1)):
+                dict1.append(dict1[i].union(dict1[i+1]))
+  if len(list1)<6:
+     for i in range(0, len(dict1) - 1):
+         fact(i + 1)
 
-  for i in range(0, len(dict1) - 1):
-      fact(i + 1)
 
   dict1.append(tuple(list1))
   dict1.append(())
