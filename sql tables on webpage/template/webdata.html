@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>web</title>
+</head>
+<body>
+<form action="{%url 'func'%}">
+
+  <label for="car">select table:</label>
+
+        <select name="schem" id="car">
+
+            <option value="student1">student1</option>
+
+            <option value="employ">employ</option>
+
+            <option value="departments">departments</option>
+            <option value="shop3">shop3</option>
+        </select>
+
+
+
+
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+<form action="{%url 'func1'%}">
+
+  <label for="car">select column for student table:</label>
+
+
+        <select name="sch">
+          <option value="student_id">student id</option>
+           <option value="name">name</option>
+          <option value="rollno">rollno</option>
+          <option value="DOB">dateofbirth</option>
+        </select>
+
+
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+<form action="{%url 'func2'%}">
+
+  <label for="car">select column for employ table:</label>
+
+
+        <select name="sch1">
+          <option value="id">id</option>
+           <option value="emp_name">employ name</option>
+          <option value="salary">salary</option>
+
+        </select>
+
+
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+
+
+
+
+
+</body>
+</html>
